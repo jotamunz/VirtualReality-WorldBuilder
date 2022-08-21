@@ -1,36 +1,46 @@
-using System.Collections;
-using System.Collections.Generic;
+    using System;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class objectCreator : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private const float DEFAULT_SCALE = 0.5f;
+    private float scaleX = DEFAULT_SCALE, scaleY = DEFAULT_SCALE, scaleZ = DEFAULT_SCALE;    
+    public string objectTypeName;
+    private AudioSource source;
+
+   void Start()
     {
-        
     }
 
-    // Update is called once per frame
     void Update()
     {
+    }
+
+
+    public void createObject() 
+    {
+        Console.WriteLine(objectTypeName+"Holaaa");
+        GameObject newObject;   
+        switch(objectTypeName){
+            case "sphere":
+                 newObject = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                break;
+            case "cube":
+                newObject = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                break;
+            case "cylinder":
+                newObject = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+                break;
+            default: 
+                newObject = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                break;
+        }
         
-    }
-
-    public void createCube() 
-    {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.transform.position = new Vector3(0, 1, 1);
-    }
-
-    public void createSphere()
-    {
-        GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        sphere.transform.position = new Vector3(0, 1, 1);
-    }
-
-    public void createCylinder()
-    {
-        GameObject cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
-        cylinder.transform.position = new Vector3(0, 1, 1);
+        newObject.transform.position = new Vector3(0, 3, 1);
+        newObject.transform.localScale = new Vector3(scaleX,scaleY,scaleZ);
+        newObject.AddComponent<Rigidbody>();
+        newObject.AddComponent<XRGrabInteractable>();
+        
     }
 }
