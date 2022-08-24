@@ -20,7 +20,6 @@ public class objectCreator : MonoBehaviour
 
     public void createObject() 
     {
-        Console.WriteLine(objectTypeName+"Holaaa");
         GameObject newObject;   
         switch(objectTypeName){
             case "sphere":
