@@ -483,6 +483,7 @@ GameObject:
   - component: {fileID: 321111047}
   - component: {fileID: 321111046}
   - component: {fileID: 321111045}
+  - component: {fileID: 321111049}
   m_Layer: 0
   m_Name: MenuCanvas
   m_TagString: Untagged
@@ -591,6 +592,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &321111049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321111043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dedcdad4263b94143926380a44879a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputActions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
 --- !u!1 &332892017
 GameObject:
   m_ObjectHideFlags: 0
