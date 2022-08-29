@@ -11,6 +11,6 @@ public class CreateRuntimeObject : MonoBehaviour
     public void createNewObject() 
     {   
         newObject.transform.localScale = new Vector3(DEFAULT_SCALE, DEFAULT_SCALE, DEFAULT_SCALE);
-        Instantiate(newObject, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(newObject, new Vector3(1, 2, 1), Quaternion.identity);
     }
 } 
