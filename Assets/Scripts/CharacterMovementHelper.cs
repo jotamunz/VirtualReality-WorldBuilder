@@ -9,7 +9,7 @@ public class CharacterMovementHelper : MonoBehaviour
     private XROrigin m_XROrigin;
     private CharacterController m_CharacterController;
     private CharacterControllerDriver driver;
-
+    
     // Start is called before the first frame update
     void Start()
     {
