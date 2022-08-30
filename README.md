@@ -1,5 +1,5 @@
-# Model Gallery
-A virtual reality gallery builder in C# with Unity 3D and models made in Blender
+# Virtual Reality World Builder
 
-### Instituto Tecnológico de Costa Rica - Introducción a Realidad Virtual - II Semestre 2022 - Trabajo #1
+A virtual reality game where you can build your own world created in C# with Unity 3D
 
+### Instituto Tecnológico de Costa Rica - Introducción a Realidad Virtual - II Semestre 2022 - Proyecto #1
