@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 74
+  controlID: 91
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 75
+  controlID: 97
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 76
+  controlID: 98
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,22 +318,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs
   m_LastFoldersGridSize: 57
-  m_LastProjectPath: C:\Users\Jota\Documents\VirtualReality-WorldBuilder
+  m_LastProjectPath: C:\Users\sveng\OneDrive\Documents\VirtualReality-Gallery
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 83.15609}
-    m_SelectedIDs: c8770000
-    m_LastClickedID: 30664
-    m_ExpandedIDs: 00000000b2770000b4770000b6770000b8770000ba770000bc77000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: d0770000
+    m_LastClickedID: 30672
+    m_ExpandedIDs: 00000000c6770000c877000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -361,7 +361,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b2770000b4770000b6770000b8770000ba770000bc770000
+    m_ExpandedIDs: 00000000c6770000c8770000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -493,7 +493,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 26bbffff3ad9ffff2cfbffff
+      m_ExpandedIDs: fabcffff28fbffffac7000005c710000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -734,7 +734,7 @@ MonoBehaviour:
       index: 10
       layout: 4
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -743,9 +743,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -9.570215, y: -13.39631, z: -20.308672}
+    m_Target: {x: -7.8727465, y: -11.813051, z: -34.47338}
     speed: 2
-    m_Value: {x: -9.570215, y: -13.39631, z: -20.308672}
+    m_Value: {x: -7.8727465, y: -11.813051, z: -34.47338}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -792,13 +792,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.080100045, y: -0.919899, z: 0.27461842, w: 0.26829964}
+    m_Target: {x: -0.022432214, y: 0.9763382, z: -0.17495157, w: -0.12517719}
     speed: 2
-    m_Value: {x: 0.08050118, y: -0.9194722, z: 0.27599382, w: 0.26817518}
+    m_Value: {x: -0.02235511, y: 0.97625303, z: -0.17644812, w: -0.1236781}
   m_Size:
-    m_Target: 20.25129
+    m_Target: 18.94108
     speed: 2
-    m_Value: 20.25129
+    m_Value: 18.94108
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -858,7 +858,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1096.5, y: 560.5}
+  m_TargetSize: {x: 877.19995, y: 448.4}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -873,10 +873,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -438.6
-    m_HBaseRangeMax: 438.6
-    m_VBaseRangeMin: -224.2
-    m_VBaseRangeMax: 224.2
+    m_HBaseRangeMin: -350.87997
+    m_HBaseRangeMax: 350.87997
+    m_VBaseRangeMin: -179.36
+    m_VBaseRangeMax: 179.36
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -896,7 +896,7 @@ MonoBehaviour:
       y: 21
       width: 877.19995
       height: 448.4
-    m_Scale: {x: 0.99999994, y: 0.99999994}
+    m_Scale: {x: 1, y: 1}
     m_Translation: {x: 438.59998, y: 224.2}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -904,12 +904,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -438.6
-      y: -224.20001
-      width: 877.2
-      height: 448.40002
+      x: -438.59998
+      y: -224.2
+      width: 877.19995
+      height: 448.4
     m_MinimalGUI: 1
-  m_defaultScale: 0.99999994
+  m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1096.5, y: 586.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
