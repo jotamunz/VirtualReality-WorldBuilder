@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/WIM Scene.unity
     guid: 5b6cb63e5ce9b8041a2c928f13c63dec
-  - enabled: 1
+  - enabled: 0
     path: Assets/Proyecto_A.unity
     guid: 563f735c51cec73408826c480268355d
+  - enabled: 1
+    path: Assets/Proyecto_Mapa.unity
+    guid: 64880fbc015e0e047af9ed171ae49d0c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ed72be55522c8448bae8b0d66fa21adf,
       type: 2}
