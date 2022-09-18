@@ -525,8 +525,8 @@
                     "name": "",
                     "id": "8da6ed3a-f621-49fe-8c76-1f6b7d7754d6",
                     "path": "<XRController>{LeftHand}/Primary2DAxis",
-                    "interactions": "Sector(directions=1)",
-                    "processors": "",
+                    "interactions": "Sector(directions=1,sweepBehavior=1,pressPoint=0.8)",
+                    "processors": "StickDeadzone",
                     "groups": "Noncontinuous Move",
                     "action": "Teleport Mode Activate",
                     "isComposite": false,
@@ -1043,9 +1043,9 @@
                     "name": "",
                     "id": "62690862-4688-4010-975b-b3d9c6062157",
                     "path": "<XRController>{RightHand}/Primary2DAxis",
-                    "interactions": "Sector(directions=1)",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
+                    "interactions": "Sector(directions=1,sweepBehavior=1,pressPoint=0.8)",
+                    "processors": "StickDeadzone",
+                    "groups": "Noncontinuous Move",
                     "action": "Teleport Mode Activate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1069,6 +1069,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a8bd8ced-4870-414c-85d8-8a845b4ca7ec",
+                    "path": "<XRController>{RightHand}/Primary2DAxis",
+                    "interactions": "",
+                    "processors": "StickDeadzone",
+                    "groups": "Continuous Move",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
