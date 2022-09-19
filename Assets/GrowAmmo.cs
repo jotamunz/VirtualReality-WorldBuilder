@@ -19,9 +19,10 @@ public class GrowAmmo : MonoBehaviour
         
     }
 
-    IEnumerator  OnTriggerEnter(Collider other){
+    // When the seed collides with the soil the plant is created and seed destroyed
+    IEnumerator  OnCollisionEnter(Collision other){
         if (other.gameObject.tag == "Seed"){
-            Destroy(other.gameObject, 1);
+            Destroy(other.gameObject, 0);
             yield return new WaitForSeconds(1);
             GameObject smallCrop = Instantiate(cropFirstState, transform.position, transform.rotation);
             Destroy(smallCrop, 5);
