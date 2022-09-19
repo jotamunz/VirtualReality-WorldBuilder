@@ -22,6 +22,8 @@ public class ToolSwitch : MonoBehaviour
     public GameObject hoePref;
     public GameObject scythePref;
 
+    public float DEFAULT_SCALE;  
+
     private List<UnityEngine.XR.InputDevice> rightControllers = new List<UnityEngine.XR.InputDevice>();
 
         void Start()
@@ -34,9 +36,10 @@ public class ToolSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool primaryValue;
+        
         foreach (var controller in this.rightControllers)
         {
+            bool primaryValue;
             if (controller.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primaryButton, out primaryValue) && primaryValue)
             {
                 Debug.Log("A/Primary button is pressed.");
@@ -58,7 +61,8 @@ public class ToolSwitch : MonoBehaviour
                     actualTool = scythePref;
                 }
 
-
+                actualTool.transform.localScale = new Vector3(DEFAULT_SCALE, DEFAULT_SCALE, DEFAULT_SCALE);
+                Instantiate(actualTool, new Vector3(0, 1, 1), Quaternion.identity);
             } 
         }
 

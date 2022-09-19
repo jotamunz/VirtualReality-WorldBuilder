@@ -3536,6 +3536,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c743ee14e87caf499203caa5893c5a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toolFlag: 0
+  actualTool: {fileID: 0}
+  weapongPref: {fileID: 919132149155446097, guid: bda3df0b090a6d64f9ef4850a025dc3a,
+    type: 3}
+  hoePref: {fileID: 919132149155446097, guid: cac02654c83b2c94faf8ee2dfcaab1d9, type: 3}
+  scythePref: {fileID: 919132149155446097, guid: 2dbfb94aea12daf43bbaa0bdf3d9b5f4,
+    type: 3}
+  DEFAULT_SCALE: 1
 --- !u!1 &2084715290
 GameObject:
   m_ObjectHideFlags: 0
