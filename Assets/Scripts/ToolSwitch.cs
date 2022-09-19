@@ -22,36 +22,45 @@ public class ToolSwitch : MonoBehaviour
     public GameObject hoePref;
     public GameObject scythePref;
 
-    private UnityEngine.XR.InputDevice rightHand;
-    
-    void Start()
+    private List<UnityEngine.XR.InputDevice> rightControllers = new List<UnityEngine.XR.InputDevice>();
+
+        void Start()
     {
         // Right Hand XR controller
-        var rightControllers = new List<UnityEngine.XR.InputDevice>();
-        UnityEngine.XR.InputDevices.GetDevicesWithRole(UnityEngine.XR.InputDeviceRole.RightHanded, rightController);
-        foreach (var device in rightControllers)
-        {
-            Debug.Log(string.Format("Device name '{0}' has role '{1}'", device.name, device.role.ToString()));
-        }
-
-        if (rightControllers != null){
-
-            rightHand = rightControllers[0];
-        }
+        var desiredCharacteristics = UnityEngine.XR.InputDeviceCharacteristics.HeldInHand | UnityEngine.XR.InputDeviceCharacteristics.Right | UnityEngine.XR.InputDeviceCharacteristics.Controller;
+        UnityEngine.XR.InputDevices.GetDevicesWithCharacteristics(desiredCharacteristics, rightControllers);
     }
 
     // Update is called once per frame
     void Update()
     {
         bool primaryValue;
-        if (rightHand.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primaryButton, out primaryValue) && primaryValue)
+        foreach (var controller in this.rightControllers)
         {
-            Debug.Log("A/Primary button is pressed.");
-            this.toolFlag += 1;
+            if (controller.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primaryButton, out primaryValue) && primaryValue)
+            {
+                Debug.Log("A/Primary button is pressed.");
+                this.toolFlag += 1;
 
-            if (toolFlag >= 3){
-                toolFlag = 0;
-            }
+                if (toolFlag >= 3){
+                    toolFlag = 0;
+                }
+
+                if (toolFlag == 0){
+                    actualTool = weapongPref;
+                }
+
+                if (toolFlag == 1){
+                    actualTool = hoePref;
+                }
+
+                if (toolFlag == 2){
+                    actualTool = scythePref;
+                }
+
+
+            } 
         }
+
     }
 }
