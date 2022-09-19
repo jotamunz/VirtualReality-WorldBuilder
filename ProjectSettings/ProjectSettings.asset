@@ -186,6 +186,7 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+<<<<<<< Tool-Switching
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -223,6 +224,8 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+=======
+>>>>>>> Fix bug in collision
   - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
