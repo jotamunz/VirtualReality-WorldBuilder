@@ -8,6 +8,7 @@ public class ActivateTeleportRay : MonoBehaviour
 {
     public TeleportationProvider provider;
     public GameObject teleportationRay;
+    public GameObject grabRay;
     public InputActionProperty cancelAction;
     public InputActionProperty thumbstick;
     private XRRayInteractor rayInteractor;
@@ -31,6 +32,7 @@ public class ActivateTeleportRay : MonoBehaviour
                 thumbstick.action.ReadValue<Vector2>().y >= 0.95)
             {
                 teleportationRay.SetActive(true);
+                grabRay.SetActive(false);
             }
         }
 
@@ -42,6 +44,7 @@ public class ActivateTeleportRay : MonoBehaviour
                 thumbstick.action.ReadValue<Vector2>().y < 0)
             {
                 teleportationRay.SetActive(false);
+                grabRay.SetActive(true);
                 return;
             }
 
@@ -52,6 +55,7 @@ public class ActivateTeleportRay : MonoBehaviour
             if (!rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
             {
                 teleportationRay.SetActive(false);
+                grabRay.SetActive(true);
                 return;
             }   
 
@@ -62,11 +66,13 @@ public class ActivateTeleportRay : MonoBehaviour
 
             provider.QueueTeleportRequest(request);
             teleportationRay.SetActive(false);
+            grabRay.SetActive(true);
         }
     }
 
     void OnTeleportCancel(InputAction.CallbackContext context)
     {
         teleportationRay.SetActive(false);
+        grabRay.SetActive(true);
     }
 }
