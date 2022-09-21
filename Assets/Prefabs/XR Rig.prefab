@@ -401,6 +401,7 @@ MonoBehaviour:
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -923,6 +924,7 @@ MonoBehaviour:
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -1528,6 +1530,7 @@ MonoBehaviour:
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2133,6 +2136,7 @@ MonoBehaviour:
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2439,6 +2443,7 @@ GameObject:
   - component: {fileID: 4189723030933558197}
   - component: {fileID: 67991498}
   - component: {fileID: 67991499}
+  - component: {fileID: 958893176119354204}
   - component: {fileID: 67991508}
   m_Layer: 6
   m_Name: XR Rig
@@ -2558,6 +2563,7 @@ MonoBehaviour:
   m_DebounceTime: 0.5
   m_EnableTurnLeftRight: 1
   m_EnableTurnAround: 0
+  m_DelayTime: 0
   m_LeftHandSnapTurnAction:
     m_UseReference: 0
     m_Action:
@@ -2686,6 +2692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 4189723030933558200}
+  m_DelayTime: 0
 --- !u!114 &67991499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2700,6 +2707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   provider: {fileID: 67991498}
   teleportationRay: {fileID: 1148634717}
+  grabRay: {fileID: 0}
   cancelAction:
     m_UseReference: 1
     m_Action:
@@ -2726,6 +2734,22 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+--- !u!114 &958893176119354204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4189723030933558211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1280553ea447fe749b299a8823daa93d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftGrabRay: {fileID: 0}
+  rightGrabRay: {fileID: 0}
+  leftDirectInteractor: {fileID: 0}
+  rightDirectInteractor: {fileID: 0}
 --- !u!114 &67991508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2738,11 +2762,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c743ee14e87caf499203caa5893c5a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPref: {fileID: 1392316285209212, guid: 869385138ceeb3c4e9ed5f72da8d50d7, type: 3}
-  hoePref: {fileID: 919132149155446097, guid: cac02654c83b2c94faf8ee2dfcaab1d9, type: 3}
-  scythePref: {fileID: 919132149155446097, guid: 2dbfb94aea12daf43bbaa0bdf3d9b5f4,
-    type: 3}
-  scale: 1
+  weapon: {fileID: 0}
+  hoe: {fileID: 0}
+  scythe: {fileID: 0}
 --- !u!1 &4189723031611813899
 GameObject:
   m_ObjectHideFlags: 0
@@ -3213,10 +3235,20 @@ MonoBehaviour:
   m_RepeatDelay: 0.5
   m_RepeatRate: 0.1
   m_TrackedDeviceDragThresholdMultiplier: 1.4
+  m_ActiveInputMode: 0
   m_MaxTrackedDeviceRaycastDistance: 1000
   m_EnableXRInput: 1
   m_EnableMouseInput: 1
   m_EnableTouchInput: 1
+  m_PointAction: {fileID: 0}
+  m_LeftClickAction: {fileID: 0}
+  m_MiddleClickAction: {fileID: 0}
+  m_RightClickAction: {fileID: 0}
+  m_ScrollWheelAction: {fileID: 0}
+  m_NavigateAction: {fileID: 0}
+  m_SubmitAction: {fileID: 0}
+  m_CancelAction: {fileID: 0}
+  m_EnableBuiltinActionsAsFallback: 1
   m_EnableGamepadInput: 1
   m_EnableJoystickInput: 1
   m_HorizontalAxis: Horizontal
@@ -3704,6 +3736,7 @@ MonoBehaviour:
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -4008,6 +4041,7 @@ MonoBehaviour:
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []

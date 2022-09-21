@@ -379,6 +379,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &746081755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 937139587, guid: 6691b5177233b3b43b99ccd748c95bdb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1722463746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &868375992 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1644212543, guid: 6691b5177233b3b43b99ccd748c95bdb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1722463746}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &976248400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -453,6 +471,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
+--- !u!114 &1560565509 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1941584054, guid: 6691b5177233b3b43b99ccd748c95bdb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1722463746}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1600664178
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,6 +698,26 @@ PrefabInstance:
       propertyPath: weaponPref
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 958893176119354204, guid: 6691b5177233b3b43b99ccd748c95bdb,
+        type: 3}
+      propertyPath: leftGrabRay
+      value: 
+      objectReference: {fileID: 746081755}
+    - target: {fileID: 958893176119354204, guid: 6691b5177233b3b43b99ccd748c95bdb,
+        type: 3}
+      propertyPath: rightGrabRay
+      value: 
+      objectReference: {fileID: 1722463747}
+    - target: {fileID: 958893176119354204, guid: 6691b5177233b3b43b99ccd748c95bdb,
+        type: 3}
+      propertyPath: leftDirectInteractor
+      value: 
+      objectReference: {fileID: 868375992}
+    - target: {fileID: 958893176119354204, guid: 6691b5177233b3b43b99ccd748c95bdb,
+        type: 3}
+      propertyPath: rightDirectInteractor
+      value: 
+      objectReference: {fileID: 1560565509}
     - target: {fileID: 4189723030933558205, guid: 6691b5177233b3b43b99ccd748c95bdb,
         type: 3}
       propertyPath: m_RootOrder
