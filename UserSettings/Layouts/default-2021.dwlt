@@ -15,11 +15,19 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
+<<<<<<< Tool-Switching
     y: 43.2
     width: 1536
     height: 772.8
   m_ShowMode: 4
   m_Title: Game
+=======
+    y: 43
+    width: 1920
+    height: 1007
+  m_ShowMode: 4
+  m_Title: Inspector
+>>>>>>> Hands-Interaction
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 350}
   m_MaxSize: {x: 10000, y: 10000}
@@ -40,9 +48,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< Tool-Switching
     y: 466.4
     width: 357.60004
     height: 256.4
+=======
+    y: 530
+    width: 515
+    height: 427
+>>>>>>> Hands-Interaction
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 15}
@@ -67,6 +81,7 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
+<<<<<<< Tool-Switching
     x: 724.8
     y: 0
     width: 357.60004
@@ -75,6 +90,16 @@ MonoBehaviour:
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
   controlID: 48
+=======
+    x: 892
+    y: 0
+    width: 515
+    height: 957
+  m_MinSize: {x: 100, y: 200}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 17
+>>>>>>> Hands-Interaction
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,8 +120,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< Tool-Switching
     width: 1536
     height: 772.8
+=======
+    width: 1920
+    height: 1007
+>>>>>>> Hands-Interaction
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -120,7 +150,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1536
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -145,12 +175,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< Tool-Switching
     width: 1536
     height: 722.8
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
   controlID: 126
+=======
+    width: 1920
+    height: 957
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 16
+>>>>>>> Hands-Interaction
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,8 +206,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< Tool-Switching
     y: 752.8
     width: 1536
+=======
+    y: 987
+    width: 1920
+>>>>>>> Hands-Interaction
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -191,12 +235,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< Tool-Switching
     width: 724.8
     height: 722.8
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
   controlID: 39
+=======
+    width: 892
+    height: 957
+  m_MinSize: {x: 100, y: 200}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 57
+>>>>>>> Hands-Interaction
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,10 +267,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< Tool-Switching
     width: 357.60004
     height: 466.4
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 515
+    height: 530
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> Hands-Interaction
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -238,10 +298,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< Tool-Switching
     x: 1082.4
     y: 0
     width: 453.59998
     height: 722.8
+=======
+    x: 1407
+    y: 0
+    width: 513
+    height: 957
+>>>>>>> Hands-Interaction
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
@@ -266,10 +333,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< Tool-Switching
     width: 724.8
     height: 391.2
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 892
+    height: 412
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> Hands-Interaction
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -291,11 +365,19 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< Tool-Switching
     y: 391.2
     width: 724.8
     height: 331.59998
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    y: 412
+    width: 892
+    height: 545
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> Hands-Interaction
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -317,15 +399,22 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< Tool-Switching
     x: 724.8
     y: 73.6
     width: 355.60004
     height: 445.4
+=======
+    x: 892
+    y: 73
+    width: 513
+    height: 509
+>>>>>>> Hands-Interaction
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -333,23 +422,29 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< Tool-Switching
       m_SelectedIDs: 04ecffff
       m_LastClickedID: -5116
       m_ExpandedIDs: 2cfbffffd66f0000
+=======
+      m_SelectedIDs: a47b0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: b0eeffffb8eeffff0cefffff1cefffff38efffff42efffff40f5ffff82f7ffff
+>>>>>>> Hands-Interaction
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: LeftHand Controller
+        m_OriginalName: LeftHand Controller
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -4340
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -375,15 +470,22 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< Tool-Switching
     x: 1082.4
     y: 73.6
     width: 452.59998
     height: 701.8
+=======
+    x: 1407
+    y: 73
+    width: 512
+    height: 936
+>>>>>>> Hands-Interaction
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -417,15 +519,22 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< Tool-Switching
     x: 724.8
     y: 540
     width: 355.60004
     height: 235.4
+=======
+    x: 892
+    y: 603
+    width: 513
+    height: 406
+>>>>>>> Hands-Interaction
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -443,14 +552,15 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
+<<<<<<< Tool-Switching
   m_LastProjectPath: C:\Users\Andres\Desktop\Unity-Projects\Projects\VirtualReality-WorldBuilder
   m_LockTracker:
     m_IsLocked: 0
@@ -459,20 +569,30 @@ MonoBehaviour:
     m_SelectedIDs: 26760000
     m_LastClickedID: 30246
     m_ExpandedIDs: 0000000046740000487400004a7400004c7400004e74000050740000527400005474000056740000587400005a7400005c7400005e740000607400006274000064740000247600002676000000ca9a3b
+=======
+  m_LastProjectPath: C:\Users\mreve\OneDrive\Escritorio\Github\VirtualReality-WorldBuilder
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 26770000
+    m_LastClickedID: 30502
+    m_ExpandedIDs: 00000000727500007475000000ca9a3b
+>>>>>>> Hands-Interaction
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: All Materials
+      m_OriginalName: All Materials
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 1000000001
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
@@ -486,7 +606,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Tool-Switching
     m_ExpandedIDs: 0000000046740000487400004a7400004c7400004e74000050740000527400005474000056740000587400005a7400005c7400005e740000607400006274000064740000
+=======
+    m_ExpandedIDs: 000000007275000074750000
+>>>>>>> Hands-Interaction
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -558,15 +682,21 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< Tool-Switching
     y: 464.80002
     width: 723.8
     height: 310.59998
+=======
+    y: 485
+    width: 891
+    height: 524
+>>>>>>> Hands-Interaction
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -577,7 +707,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< Tool-Switching
   m_TargetSize: {x: 904.75, y: 361.99997}
+=======
+  m_TargetSize: {x: 891, y: 503}
+>>>>>>> Hands-Interaction
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -592,10 +726,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< Tool-Switching
     m_HBaseRangeMin: -361.9
     m_HBaseRangeMax: 361.9
     m_VBaseRangeMin: -144.79999
     m_VBaseRangeMax: 144.79999
+=======
+    m_HBaseRangeMin: -445.5
+    m_HBaseRangeMax: 445.5
+    m_VBaseRangeMin: -251.5
+    m_VBaseRangeMax: 251.5
+>>>>>>> Hands-Interaction
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -613,16 +754,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< Tool-Switching
       width: 723.8
       height: 289.59998
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 361.9, y: 144.79999}
+=======
+      width: 891
+      height: 503
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 445.5, y: 251.5}
+>>>>>>> Hands-Interaction
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< Tool-Switching
       x: -361.9
       y: -144.79999
       width: 723.8
@@ -630,9 +779,18 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 904.75, y: 388.24997}
+=======
+      x: -445.5
+      y: -251.5
+      width: 891
+      height: 503
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 891, y: 524}
+>>>>>>> Hands-Interaction
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 00000000000000000000
+  m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: -1
   m_RenderTexture: {fileID: 0}
 --- !u!114 &17
@@ -651,15 +809,21 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< Tool-Switching
     y: 73.6
     width: 723.8
     height: 370.2
+=======
+    y: 73
+    width: 891
+    height: 391
+>>>>>>> Hands-Interaction
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -669,8 +833,13 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< Tool-Switching
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: -100, y: -25.600006}
+=======
+      snapOffset: {x: -100, y: -25.600006}
+      snapOffsetDelta: {x: -1, y: -0.3999939}
+>>>>>>> Hands-Interaction
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -852,7 +1021,7 @@ MonoBehaviour:
       index: 10
       layout: 4
   m_WindowGUID: 79bca072017b3254c9e428c4e3f554df
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -861,9 +1030,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< Tool-Switching
     m_Target: {x: 1.2782688, y: 1.1364652, z: -0.24734229}
     speed: 2
     m_Value: {x: 1.2782688, y: 1.1364652, z: -0.24734229}
+=======
+    m_Target: {x: -0.20790197, y: 1.2588823, z: 0.29999998}
+    speed: 2
+    m_Value: {x: -0.20790195, y: 1.2588823, z: 0.29999995}
+>>>>>>> Hands-Interaction
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -889,7 +1064,7 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     yGrid:
       m_Fade:
         m_Target: 1
@@ -905,11 +1080,12 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< Tool-Switching
     m_Target: {x: -0.1806167, y: -0.49243256, z: 0.10527949, w: -0.8448936}
     speed: 2
     m_Value: {x: -0.180613, y: -0.49242246, z: 0.10527733, w: -0.8448762}
@@ -917,6 +1093,15 @@ MonoBehaviour:
     m_Target: 1.2721696
     speed: 2
     m_Value: 1.2721696
+=======
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
+  m_Size:
+    m_Target: 0.35370484
+    speed: 2
+    m_Value: 0.37037155
+>>>>>>> Hands-Interaction
   m_Ortho:
     m_Target: 0
     speed: 2
