@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Crop-Tool
   - Seed
+  - Hoe
+  - Weapon
+  - Scythe
   layers:
   - Default
   - TransparentFX

@@ -8,9 +8,11 @@ public class ActivateTeleportRay : MonoBehaviour
 {
     public TeleportationProvider provider;
     public GameObject teleportationRay;
+    public GameObject grabRay;
     public InputActionProperty cancelAction;
     public InputActionProperty thumbstick;
     private XRRayInteractor rayInteractor;
+    private bool teleportCanceled;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +20,7 @@ public class ActivateTeleportRay : MonoBehaviour
         teleportationRay.SetActive(false);
         cancelAction.action.performed += OnTeleportCancel;
         rayInteractor = teleportationRay.GetComponent<XRRayInteractor>();
+        teleportCanceled = false;
     }
 
     // Update is called once per frame
@@ -30,7 +33,15 @@ public class ActivateTeleportRay : MonoBehaviour
                 thumbstick.action.ReadValue<Vector2>().x >= -0.5 &&
                 thumbstick.action.ReadValue<Vector2>().y >= 0.95)
             {
-                teleportationRay.SetActive(true);
+                if (!teleportCanceled)
+                {
+                    teleportationRay.SetActive(true);
+                    grabRay.SetActive(false);
+                }
+            } 
+            else
+            {
+                teleportCanceled = false;
             }
         }
 
@@ -42,6 +53,7 @@ public class ActivateTeleportRay : MonoBehaviour
                 thumbstick.action.ReadValue<Vector2>().y < 0)
             {
                 teleportationRay.SetActive(false);
+                grabRay.SetActive(true);
                 return;
             }
 
@@ -52,6 +64,7 @@ public class ActivateTeleportRay : MonoBehaviour
             if (!rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
             {
                 teleportationRay.SetActive(false);
+                grabRay.SetActive(true);
                 return;
             }   
 
@@ -62,11 +75,14 @@ public class ActivateTeleportRay : MonoBehaviour
 
             provider.QueueTeleportRequest(request);
             teleportationRay.SetActive(false);
+            grabRay.SetActive(true);
         }
     }
 
     void OnTeleportCancel(InputAction.CallbackContext context)
     {
         teleportationRay.SetActive(false);
+        grabRay.SetActive(true);
+        teleportCanceled = true;
     }
 }
