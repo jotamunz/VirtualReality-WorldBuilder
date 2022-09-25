@@ -27,7 +27,6 @@ public class GrowCrop : MonoBehaviour
             Destroy(smallCrop, 5);
             yield return new WaitForSeconds(5);
             GameObject grownCrop = Instantiate(cropSecondState, transform.position, transform.rotation);
-            Destroy(grownCrop, 30);
         } 
     }
 }   

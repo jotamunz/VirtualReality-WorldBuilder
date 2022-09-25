@@ -8,6 +8,7 @@ TagManager:
   - Hoe
   - Weapon
   - Scythe
+  - Axe
   layers:
   - Default
   - TransparentFX

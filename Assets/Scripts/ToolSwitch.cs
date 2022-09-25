@@ -7,53 +7,43 @@ using UnityEngine.InputSystem;
 
 public class ToolSwitch : MonoBehaviour
 {
-    /*  This flag indicates wich tool will be displayed next
-        0 = Weapon
-        1 = Hoe
-        2 = Scythe
-    */
-    private int toolFlag = 0;   
+    LinkedList<GameObject> weaponList = new LinkedList<GameObject>();
 
-    // This variable will contain the object that will be in the VR world
-    // This will change depending on toolFlag variable
-    private GameObject actualTool;
+    // This variable will contain the tempObject that will be in the VR world
+    LinkedListNode<GameObject> actualTool;
 
     // These varaibles represent the prefabs that will spawn
-    public GameObject weapon;
-    public GameObject hoe;
-    public GameObject scythe;
+    public Transform transformPivot;
+    public GameObject weapon, scythe, hoe;
 
     void Start()
-    {
-        
+    {        
+        GameObject tempObject = Instantiate(weapon, transformPivot.position, transform.rotation);
+        tempObject.SetActive(false);
+        weaponList.AddLast(tempObject);
+
+        tempObject = Instantiate(scythe, transformPivot.position, transform.rotation);
+        tempObject.SetActive(false);
+        weaponList.AddLast(tempObject);
+
+        tempObject = Instantiate(hoe, transformPivot.position, transform.rotation);
+        tempObject.SetActive(false);
+        weaponList.AddLast(tempObject);
+         
+        actualTool = weaponList.First;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-
-    }
+    void Update(){}
 
     public void OnToolSwitch()
-    {
-        this.toolFlag += 1;
+    {   
+        actualTool.Value.SetActive(false);
+        actualTool = actualTool.Next ?? weaponList.First;
+        actualTool.Value.SetActive(true);
+        actualTool.Value.transform.position = new Vector3(transformPivot.position.x,transformPivot.position.y,transformPivot.position.z);
+        actualTool.Value.transform.Translate(transformPivot.forward * 0.3f, Space.Self);
+        actualTool.Value.transform.Translate(transformPivot.up * 1.5f, Space.Self);
 
-        if (toolFlag >= 3){
-            toolFlag = 0;
-        }
-
-        if (toolFlag == 0){
-            actualTool = weapon;
-        }
-
-        if (toolFlag == 1){
-            actualTool = hoe;
-        }
-
-        if (toolFlag == 2){
-            actualTool = scythe;
-        }
-        Instantiate(actualTool, transform.position, Quaternion.identity);
     }
 }
