@@ -24,7 +24,7 @@ public class DropCrop : MonoBehaviour
         if (collision.gameObject.tag == "Scythe") hitpoints--;
         if (collision.gameObject.tag == "Scythe" && hitpoints == 0)
         {
-            // TODO: Cant refactor this for some reason
+            // TODO: Refactor repeated code
             float[] angles = {10, 30, 60, 90};  // This just could be a random within a range
             LinkedList<float> anglesList = new LinkedList<float>(angles);
             LinkedListNode<float> current = anglesList.First;

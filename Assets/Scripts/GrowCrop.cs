@@ -7,6 +7,8 @@ public class GrowCrop : MonoBehaviour
 {
     private CropProperties cropProperties;
     private GameObject growingCrop, grownCrop;
+    private bool seedGrew = false;
+    public GameObject nextSoilState;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +19,11 @@ public class GrowCrop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-   
+        if (grownCrop == null && seedGrew == true)
+        {
+            GameObject grassSoil = Instantiate(nextSoilState, transform.position, transform.rotation);
+            Destroy(gameObject, 0);
+        }
     }
 
     // On collison with a seed obtains the crop properties from that seed
@@ -36,6 +42,7 @@ public class GrowCrop : MonoBehaviour
             yield return new WaitForSeconds(cropProperties.growthTimeSeconds);
             CancelInvoke("IncreaseScale");
             grownCrop = Instantiate(cropProperties.grownCropPrefab, transform.position, transform.rotation);
+            seedGrew = true;
         } 
     }
 
@@ -46,6 +53,6 @@ public class GrowCrop : MonoBehaviour
         if (growingCrop != null)
         {
             growingCrop.transform.localScale += cropProperties.scaleChange;
-        }
+        }   
     }
 }   

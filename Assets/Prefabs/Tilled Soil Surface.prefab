@@ -110,8 +110,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14469afc6e3f4b14696a99eb398fd11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cropFirstState: {fileID: 1000013410243764, guid: b9058e7a2c52c39478eabbd29e0b027f,
+  nextSoilState: {fileID: 7688126621815278233, guid: 039d3495491355342b99c5e19ef6f655,
     type: 3}
-  cropSecondState: {fileID: 1000013832410636, guid: f9e559e92c2ef7549a7d808aab0c604c,
-    type: 3}
-  growthTimeSeconds: 30
