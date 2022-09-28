@@ -7,53 +7,43 @@ using UnityEngine.InputSystem;
 
 public class ToolSwitch : MonoBehaviour
 {
-    /*  This flag indicates wich tool will be displayed next
-        0 = Weapon
-        1 = Hoe
-        2 = Scythe
-    */
-    private int toolFlag = 0;   
+    LinkedList<GameObject> toolList = new LinkedList<GameObject>();
+    LinkedListNode<GameObject> currentTool;
+    public Transform transformPivot;
+    public GameObject weapon, scythe, hoe;
 
-    // This variable will contain the object that will be in the VR world
-    // This will change depending on toolFlag variable
-    private GameObject actualTool;
-
-    // These varaibles represent the prefabs that will spawn
-    public GameObject weapon;
-    public GameObject hoe;
-    public GameObject scythe;
-
+    // Instatiates, deactivates and adds all the tools to the list
     void Start()
-    {
-        
+    {        
+        GameObject tempObject = Instantiate(weapon, transformPivot.position, transform.rotation);
+        tempObject.SetActive(false);
+        toolList.AddLast(tempObject);
+
+        tempObject = Instantiate(scythe, transformPivot.position, transform.rotation);
+        tempObject.SetActive(false);
+        toolList.AddLast(tempObject);
+
+        tempObject = Instantiate(hoe, transformPivot.position, transform.rotation);
+        tempObject.SetActive(false);
+        toolList.AddLast(tempObject);
+         
+        currentTool = toolList.First;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
 
     }
 
+    // Deactivates the current tool and activates the next one in the list
     public void OnToolSwitch()
-    {
-        this.toolFlag += 1;
-
-        if (toolFlag >= 3){
-            toolFlag = 0;
-        }
-
-        if (toolFlag == 0){
-            actualTool = weapon;
-        }
-
-        if (toolFlag == 1){
-            actualTool = hoe;
-        }
-
-        if (toolFlag == 2){
-            actualTool = scythe;
-        }
-        Instantiate(actualTool, transform.position, Quaternion.identity);
+    {   
+        currentTool.Value.SetActive(false);
+        currentTool = currentTool.Next ?? toolList.First;
+        currentTool.Value.SetActive(true);
+        currentTool.Value.transform.position = new Vector3(transformPivot.position.x, transformPivot.position.y, transformPivot.position.z);
+        currentTool.Value.transform.Translate(transformPivot.forward * 0.3f, Space.Self);
+        currentTool.Value.transform.Translate(transformPivot.up * 1.5f, Space.Self);
     }
 }
