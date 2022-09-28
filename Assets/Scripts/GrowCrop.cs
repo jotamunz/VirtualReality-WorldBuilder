@@ -3,11 +3,12 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-// This will change the material of the object when the harador hits it
 public class GrowCrop : MonoBehaviour
 {
-    public GameObject cropFirstState, cropSecondState;
+    private CropProperties cropProperties;
+    private GameObject growingCrop, grownCrop;
 
+    // Start is called before the first frame update
     void Start()
     {
 
@@ -16,17 +17,35 @@ public class GrowCrop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+   
     }
 
-    IEnumerator  OnTriggerEnter(Collider other){
-        if (other.gameObject.tag == "Seed"){
-            Destroy(other.gameObject, 1);
+    // On collison with a seed obtains the crop properties from that seed
+    // Then, destroys the seed and creates a growing crop
+    // After the specified time, destroys the growing crop and creates a grown crop
+    IEnumerator OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Seed" && growingCrop == null && grownCrop == null)
+        {
+            cropProperties = collider.gameObject.GetComponent<CropProperties>();
+            Destroy(collider.gameObject, 1);
             yield return new WaitForSeconds(1);
-            GameObject smallCrop = Instantiate(cropFirstState, transform.position, transform.rotation);
-            Destroy(smallCrop, 5);
-            yield return new WaitForSeconds(5);
-            GameObject grownCrop = Instantiate(cropSecondState, transform.position, transform.rotation);
+            growingCrop = Instantiate(cropProperties.growingCropPrefab, transform.position, transform.rotation);
+            InvokeRepeating("IncreaseScale", 0f, cropProperties.growthRate);
+            Destroy(growingCrop, cropProperties.growthTimeSeconds);
+            yield return new WaitForSeconds(cropProperties.growthTimeSeconds);
+            CancelInvoke("IncreaseScale");
+            grownCrop = Instantiate(cropProperties.grownCropPrefab, transform.position, transform.rotation);
         } 
+    }
+
+    // This function is called every "growthRate" seconds
+    // Increases the scale of the growing crop object
+    void IncreaseScale()
+    {
+        if (growingCrop != null)
+        {
+            growingCrop.transform.localScale += cropProperties.scaleChange;
+        }
     }
 }   

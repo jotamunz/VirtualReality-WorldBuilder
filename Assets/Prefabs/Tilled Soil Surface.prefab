@@ -114,3 +114,4 @@ MonoBehaviour:
     type: 3}
   cropSecondState: {fileID: 1000013832410636, guid: f9e559e92c2ef7549a7d808aab0c604c,
     type: 3}
+  growthTimeSeconds: 30

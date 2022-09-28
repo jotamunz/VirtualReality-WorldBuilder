@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 64000012622771260}
   - component: {fileID: 8817316820286775566}
   - component: {fileID: 381882007970846598}
-  m_Layer: 0
-  m_Name: Tomato_Plant
+  m_Layer: 7
+  m_Name: Tomato Plant Grown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd545c2146a6f5f46a3423f5f36744b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoToDrop: {fileID: 2962242404963314951, guid: cde577e0e1e98d24e836204dfd5620cb,
+  seedDropPrefab: {fileID: 8617116677784223332, guid: 49ddf7c47876031449cfe6fcce5e2c84,
     type: 3}
-  ammoQuant: 10
-  hitsBeforeCropping: 2
+  cropDropPrefab: {fileID: 8185331937563189512, guid: 3e2d41514df80444faad14bdc1d96ddb,
+    type: 3}
+  seedDropAmount: 1
+  cropDropAmount: 3
+  hitpoints: 1

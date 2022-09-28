@@ -3,7 +3,6 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-// This will change the material of the object when the harador hits it
 public class AllowCrop : MonoBehaviour
 {
     public GameObject nextSoilState  ;  
@@ -19,6 +18,7 @@ public class AllowCrop : MonoBehaviour
         
     }
 
+    // On collision with the hoe changes the game object to the next state of the soil
     void OnTriggerEnter(Collider other){
         if (other.gameObject.tag == "Hoe"){
             GameObject cropSoil = Instantiate(nextSoilState, transform.position, transform.rotation);
