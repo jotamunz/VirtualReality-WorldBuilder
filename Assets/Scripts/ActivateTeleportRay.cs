@@ -12,6 +12,7 @@ public class ActivateTeleportRay : MonoBehaviour
     public InputActionProperty cancelAction;
     public InputActionProperty thumbstick;
     private XRRayInteractor rayInteractor;
+    private bool teleportCanceled;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class ActivateTeleportRay : MonoBehaviour
         teleportationRay.SetActive(false);
         cancelAction.action.performed += OnTeleportCancel;
         rayInteractor = teleportationRay.GetComponent<XRRayInteractor>();
+        teleportCanceled = false;
     }
 
     // Update is called once per frame
@@ -31,8 +33,15 @@ public class ActivateTeleportRay : MonoBehaviour
                 thumbstick.action.ReadValue<Vector2>().x >= -0.5 &&
                 thumbstick.action.ReadValue<Vector2>().y >= 0.95)
             {
-                teleportationRay.SetActive(true);
-                grabRay.SetActive(false);
+                if (!teleportCanceled)
+                {
+                    teleportationRay.SetActive(true);
+                    grabRay.SetActive(false);
+                }
+            } 
+            else
+            {
+                teleportCanceled = false;
             }
         }
 
@@ -74,5 +83,6 @@ public class ActivateTeleportRay : MonoBehaviour
     {
         teleportationRay.SetActive(false);
         grabRay.SetActive(true);
+        teleportCanceled = true;
     }
 }
