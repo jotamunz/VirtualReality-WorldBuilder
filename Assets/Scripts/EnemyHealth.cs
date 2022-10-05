@@ -37,7 +37,7 @@ public class EnemyHealth : MonoBehaviour
 
     // On collison with a bullet obtains the bullet properties
     // Then, applies the damage to the enemy's health
-    IEnumerator OnTriggerEnter(Collider collider)
+    void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.tag == "Bullet")
         {
@@ -49,7 +49,7 @@ public class EnemyHealth : MonoBehaviour
                 receiveDamage(damageTaken);
         } 
             
-
+        return;
     }
 
     // Check if health is below 0 to destroy the damaged object

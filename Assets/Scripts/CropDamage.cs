@@ -9,7 +9,7 @@ public class CropDamage : MonoBehaviour
     public int damage;
 
     // Returns the value of the damage variable
-    public void getDamage(){
+    public int getDamage(){
 
         return this.damage;
     }
