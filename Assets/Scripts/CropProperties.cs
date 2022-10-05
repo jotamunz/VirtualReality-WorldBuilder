@@ -8,7 +8,7 @@ public class CropProperties : MonoBehaviour
     public float growthTimeSeconds;
     public Vector3 maxSize;
     [System.NonSerialized] public Vector3 scaleChange;
-    [System.NonSerialized] public float growthRate = 0.5f;
+    [System.NonSerialized] public float growthRate = 0.05f;
 
     // Start is called before the first frame update
     void Start()

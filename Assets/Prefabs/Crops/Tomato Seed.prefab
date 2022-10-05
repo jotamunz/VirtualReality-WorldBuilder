@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 8617116677784223332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.62, y: 0.167, z: 2.25}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -254,5 +254,5 @@ MonoBehaviour:
     type: 3}
   grownCropPrefab: {fileID: 1000013832410636, guid: f9e559e92c2ef7549a7d808aab0c604c,
     type: 3}
-  growthTimeSeconds: 30
+  growthTimeSeconds: 10
   maxSize: {x: 1, y: 1.5, z: 0.5}
