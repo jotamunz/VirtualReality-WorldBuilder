@@ -18,14 +18,16 @@ public class ShootCrop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if(Time.time >= nextFire){
 
             nextFire = Time.time + 1f / fireRate;
             shoot();
         }
+        */
     }
 
-    void shoot(){
+    public void shoot(){
         
         GameObject bullet = Instantiate(projectile, shoot_point.position, transform.rotation);
         bullet.GetComponent<Rigidbody>().AddForce(transform.forward * force);
